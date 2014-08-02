@@ -11,17 +11,27 @@ html
         li: a(href='/') Home
         li: a(href='/about') About
         li: a(href='/faq') FAQ
-    
+  table
+    th Name
+    th Length
+    th Width
+    th Height
+    th Weight
+    th Color
+    th Quantity
+    th MSRP
+    th Percent Off
     each item in items
       ul
-        li= item.name
-        li= item.dimensions.l
-        li= item.dimensions.w
-        li= item.dimensions.h
-        li= item.weight
-        li= item.color
-        li= item.quantity
-        li= item.msrp
-        li= item.percentOff
-        li= item.cost()
+      tr
+        td: a(href='/items/#{item_id}')= item.name
+        td= item.dimensions.l
+        td= item.dimensions.w
+        td= item.dimensions.h
+        td= item.weight
+        td= item.color
+        td= item.quantity
+        td= item.msrp
+        td= item.percentOff
+        td= item.cost()
 
