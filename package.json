@@ -19,7 +19,8 @@
   "dependencies": {
     "body-parser": "^1.5.2",
     "chalk": "^0.5.1",
-    "express": "^4.7.2",
+    "express": "^4.7.4",
+    "express-method-override": "0.0.3",
     "jade": "^1.5.0",
     "mongodb": "^1.4.8",
     "morgan": "^1.2.2",
@@ -35,5 +36,8 @@
     "jshint-stylish": "^0.4.0",
     "mocha": "^1.21.3",
     "mocha-lcov-reporter": "0.0.1"
+  },
+  "directories": {
+    "test": "test"
   }
 }

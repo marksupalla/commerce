@@ -1,0 +1,21 @@
+extends ../shared/template
+
+block content
+
+   h2= item.name
+
+    #item(style='background-color:#{item.color};')
+      #nuke
+        form(method='post', action='/items/#{item._id}/delete')
+           input(type='hidden', name='method', value='delete')
+           button Delete #{item.name}
+      #dimensions
+        span l #{item.dimensions.l}in/
+        span w #{item.dimensions.w}in/
+        span h #{item.dimensions.h}in
+      #weight #{item.weight}lbs
+      #quantity= item.quantity
+      #msrp $#{item.msrp.toFixed(2)}
+      #sale #{item.percentOff}%
+      #cost $#{item.cost().toFixed(2)}
+

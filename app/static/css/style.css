@@ -1,0 +1,13 @@
+table{
+  border: 3px solid grey;
+}
+
+th{
+  border: 3px solid grey;
+  width: 80px;
+}
+
+td{
+  border: 3px solid grey;
+  width: 80px;
+}
